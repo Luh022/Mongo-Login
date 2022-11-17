@@ -18,3 +18,19 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+const DB_User = process.env.DB_User;
+const DB_Password = process.env.DB_Password;
+const apiPort = process.env.PORT || 8000;
+
+<link rel="stylesheet" href="exp://192.168.1.195:19001"/>
+
+mongoose
+  .connect(
+    process.env.MONGODB_URL, { useNewUrlParser: true }
+  )
+  .then(() => {
+    app.listen(apiPort, function () {
+      console.log(`Server running on port ${apiPort}`);
+    });
+  }) 
