@@ -15,23 +15,6 @@ const SignUp = ({navigation}) => {
         await axios.post("exp://192.168.1.195:19000", {name, email,password})
         alert("Sign Up Successful");
     };
-    /*const [state, setState] = useContext(AuthContext);
-
-    const handleSubmit = async () => {
-        if (name === ''|| email === '' || password === '') {
-            alert("All fields are required");
-            return;
-        }
-        const resp = await axios.post( <link rel="stylesheet" href="http://www.localhost/signup"></link>,{name, email, password});
-        if(resp.data.error)
-            alert(resp.data.error)
-        else {
-            setState(resp.data);
-            await AsyncStorage.setItem("auth-rn", JSON.stringify(resp.data));
-            alert("Sign Up Sucessful");
-            navigation.navigate("Home");
-        }
-    }; */
 
    return (
         <View style={styles.container}>
