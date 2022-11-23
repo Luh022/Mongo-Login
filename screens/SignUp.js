@@ -12,7 +12,7 @@ const SignUp = ({navigation}) => {
             alert("All fields are required");
             return;
         }
-        await axios.post("exp://192.168.1.195:19000", {name, email,password})
+        await axios.post("mongodb://localhost:27017", {name, email,password})
         alert("Sign Up Successful");
     };
 
